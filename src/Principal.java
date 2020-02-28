@@ -36,6 +36,9 @@ public class Principal {
 		
 		System.out.println("Quantidade de pedidos: " + carrinhoDeCompra.getQtdePedidos());
 		System.out.println("Preço total: " + carrinhoDeCompra.getTotal());
+		
+		System.out.println("\nIngredientes : Quantidades");
+		Pizza.totaisIngredientes.forEach((ingrediente, quantidade) -> System.out.println(ingrediente + " : " + quantidade));
 	}
 
 }
